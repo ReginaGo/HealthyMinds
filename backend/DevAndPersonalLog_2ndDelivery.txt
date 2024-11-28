@@ -1,0 +1,50 @@
+Development Log (Equipo)
+Periodo: 10 de septiembre - 28 de octubre
+
+10 - 15 de septiembre  
+Actividad: Investigación inicial sobre el uso de APIs externas, configuración de MongoDB Atlas y Express en el backend.
+Desafíos: Dificultades iniciales con la conexión a MongoDB Atlas y configuración básica de Express.
+Solución: Documentación y guías oficiales; se completó la instalación de dependencias iniciales y conexión exitosa a la base de datos.
+
+16 - 22 de septiembre  
+Actividad: Diseño del esquema de datos y primeras rutas API, creación de componentes de front-end con Bootstrap.
+Desafíos: Complicaciones en el diseño responsivo y configuración de Bootstrap.
+Solución: Ajuste de estilos y pruebas en varios dispositivos, aplicando media queries para responsividad.
+
+23 - 29 de septiembre  
+Actividad: Implementación de autenticación de usuario, pruebas iniciales de la API.
+Desafíos: Problemas con el manejo de tokens y permisos de usuario.
+Solución: Se implementaron middleware de autenticación y manejo de tokens JWT.
+
+1 - 7 de octubre  
+Actividad: Pruebas de integración de la API, desarrollo de validaciones de entrada.
+Desafíos: Captura y notificación de errores al usuario en el frontend.
+Solución: Se implementaron alertas personalizadas y validaciones de lado del servidor y del cliente.
+
+8 - 14 de octubre  
+Actividad: Diseño y prueba de plantillas EJS, integración de funcionalidades de backend con el frontend.
+Desafíos: Problemas de compatibilidad con algunos componentes de Bootstrap en las vistas EJS.
+Solución: Se modificaron componentes y se aplicaron configuraciones adicionales para una mejor integración.
+
+15 - 21 de octubre  
+Actividad: Pruebas beta del sistema, despliegue inicial en Render.
+Desafíos: Problemas de rendimiento en el servidor y algunos errores en la carga de elementos reactivos.
+Solución: Optimización de código, compresión de archivos estáticos y optimización de llamadas API.
+
+22 - 28 de octubre  
+Actividad: Documentación final del código backend, ajuste de animaciones, despliegue público y pruebas finales.
+Desafíos: Últimos detalles en diseño y manejo de transiciones en el frontend.
+Solución: Ajustes en el diseño de Bootstrap para una mejor experiencia de usuario y revisión de la documentación.
+
+---
+
+Personal Log (Evaluación Personal y de Compañeros)
+
+Carlos  
+Durante este proyecto, me concentré principalmente en el diseño y las validaciones de la aplicación. Estuve involucrado en la implementación de las plantillas EJS y también en la documentación del backend, asegurándome de que el código fuera entendible y estuviera correctamente estructurado. Además, trabajé en mejorar la interfaz y en configurar la API inicialmente. Aunque estuve presente en cada etapa y aporté en varios aspectos, reconozco que Regina fue el pilar central del equipo, liderando los puntos más críticos como la configuración de MongoDB y la integración del backend. Considero que mi trabajo fue constante, pero sé que podría mejorar en futuras colaboraciones, aportando de una manera más organizada y enfocada.
+
+Regina  
+En este proyecto, asumí la responsabilidad principal de liderar el desarrollo del backend. Me encargué de configurar MongoDB, de integrar la API(en formato Json hecho por nosotros) y de asegurar que todas las funcionalidades estuvieran operativas. También fui responsable de realizar pruebas exhaustivas para garantizar que cada elemento del proyecto cumpliera con los requisitos. La dedicación que le puse fue intensa, ya que quería asegurarme de que cada detalle técnico funcionara perfectamente. Mis compañeros, Carlos y Fátima, estuvieron disponibles para ayudar cuando los necesité, y aunque su participación fue menor en algunas áreas, logramos trabajar en equipo. Siento que mi esfuerzo fue crucial para lograr los objetivos, y quedo satisfecha con el resultado de nuestra colaboración.
+
+Fátima  
+Mi contribución al proyecto se centró principalmente en el diseño y desarrollo del frontend. Trabajé con Bootstrap, implementando varios elementos de la interfaz de usuario y ayudando a configurar los estilos y transiciones para que fueran fluidos y funcionales. A pesar de que mi participación fue menor en el backend, estuve disponible para asistir en pruebas y solución de problemas. Siento que pude aportar en el diseño visual y en la usabilidad, pero también reconozco que Regina tomó el liderazgo y trabajó de manera destacada en los aspectos más complejos del proyecto. Me alegra haber colaborado y espero que en futuros proyectos pueda contribuir de una manera más profunda en el backend.

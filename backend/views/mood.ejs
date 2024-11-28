@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css\mood.css">
+    <title>Mood Tracker & Journal</title>
+    
+</head>
+<body>
+    <button class="back-button" onclick="window.history.back();"><img src="./img/arrow-back.png" alt="" srcset=""></button>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <div class="mood-select">
+            <label class="mood" data-mood="happy" for="mood-happy">😊
+                <input type="radio" id="mood-happy" name="mood" value="happy">
+            </label>
+            <label class="mood" data-mood="neutral" for="mood-neutral">😐
+                <input type="radio" id="mood-neutral" name="mood" value="neutral">
+            </label>
+            <label class="mood" data-mood="sad" for="mood-sad">😢
+                <input type="radio" id="mood-sad" name="mood" value="sad">
+            </label>
+            <label class="mood" data-mood="angry" for="mood-angry">😠
+                <input type="radio" id="mood-angry" name="mood" value="angry">
+            </label>
+        </div>
+        <textarea placeholder="Add a note..."></textarea>
+        <button>Save</button>
+        
+        <!-- Journal Section -->
+        <div class="journal-section">
+            <h2>Journal</h2>
+            <div class="journal-entry">
+                <textarea placeholder="Write your goals for today..."></textarea>
+                <button>Save Entry</button>
+            </div>
+            <ul class="entries-list">
+                <!-- Entries will be added here -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
