@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+.image-container {
+    position: relative;
+    width: 70%;
+    
+    margin-left: 15%;
+    margin-top: 10%;
+  
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%);
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a9fb5 !important;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #e2e6ea;
+    color: #000;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.button-overlay {
+    position: absolute;
+    bottom: 20px; 
+    left: 20%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    
+}
+
+.button-overlay button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fefefe;
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.button-overlay button:hover {
+    background-color: #acdbe6;
+}
+
+.faqsIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px; 
+    height: 55px;
+    cursor: pointer;
+    z-index: 1000; 
+    background-color: #1938ff35;
+    border-radius: 50%;
+  }
+  
+  .faqsIcon img {
+    top: 20px;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+
+  }
+  .fila {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .celdaNumero {
+    width: 45%; 
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .celdaTexto {
+    width: 45%; 
+    text-align: center;
+    font-style: italic;
+  }
+  
+  
+  
+  .faq-item {
+    margin: 20px 0;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.faq-question {
+    background-color: #6a9fb5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-answer {
+    background-color: #f9f9f9;
+    border-left: 3px solid #6a9fb5;
+    padding: 10px;
+    display: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+footer {
+    background-color: #6a9fb5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos generales para la fila */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+ /* Estilos del sidebar */
+.sidebar {
+    width: 250px; /* Ancho del sidebar */
+    height: 100vh; /* Altura completa de la ventana */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo claro */
+    position: fixed; /* Fijo al lado izquierdo */
+    top: 0; /* Fijado desde la parte superior */
+    left: 0; /* Fijado al borde izquierdo */
+    overflow-y: auto; /* Scroll interno si el contenido excede la altura */
+    z-index: 1; /* Para asegurarse de que esté encima del contenido principal */
+    border-right: 1px solid #dee2e6; /* Línea divisoria para separar del contenido */
+  }
+  
+  /* Estilos del contenido principal */
+  .content {
+    margin-left: 250px; /* Deja espacio suficiente para el sidebar */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para diferenciar */
+    z-index: 0; /* Detrás del sidebar */
+  }
+  
+  /* Ajustes para la búsqueda */
+  #searchInput {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px; /* Centrado horizontal */
+    display: block;
+    border: 1px solid #dee2e6; /* Borde ligero */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px; /* Espaciado interno */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+    .content {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sidebar {
+      display: none; /* Oculta el sidebar en pantallas pequeñas */
+    }
+    .content {
+      margin-left: 0; /* Ajusta el contenido para ocupar toda la pantalla */
+    }
+  }
+  

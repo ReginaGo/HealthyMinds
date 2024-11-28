@@ -1,0 +1,222 @@
+/* register.css */
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a0d8f1, #f2f8ff);
+    overflow: hidden;
+    position: relative;
+}
+
+.register-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.register-form label {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin: 10px 0 5px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cfdfe3;
+    border-radius: 8px;
+    background-color: #f0faff;
+    font-size: 1rem;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #76c6e6;
+}
+
+.register-form button {
+    background-color: #1f8ebf;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #166d91;
+}
+
+.register-form span {
+    display: block;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.register-form a {
+    color: #1f8ebf;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.register-form a:hover {
+    color: #166d91;
+}
+
+.register-cloud {
+    position: absolute;
+    background: #e6f4ff;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.7;
+}
+
+.register-cloud1 {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 20%;
+}
+
+.register-cloud2 {
+    width: 250px;
+    height: 250px;
+    top: 60%;
+    left: 5%;
+}
+
+.register-cloud3 {
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    right: 10%;
+}
+/* login.css */
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a0d8f1, #f2f8ff);
+    overflow: hidden;
+    position: relative;
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.login-form label {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin: 10px 0 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cfdfe3;
+    border-radius: 8px;
+    background-color: #f0faff;
+    font-size: 1rem;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #76c6e6;
+}
+
+.login-form button {
+    background-color: #1f8ebf;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #166d91;
+}
+
+.login-form span {
+    display: block;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.login-form a {
+    color: #1f8ebf;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.login-form a:hover {
+    color: #166d91;
+}
+
+.login-cloud {
+    position: absolute;
+    background: #e6f4ff;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.7;
+}
+
+.login-cloud1 {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 20%;
+}
+
+.login-cloud2 {
+    width: 250px;
+    height: 250px;
+    top: 60%;
+    left: 5%;
+}
+
+.login-cloud3 {
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    right: 10%;
+}

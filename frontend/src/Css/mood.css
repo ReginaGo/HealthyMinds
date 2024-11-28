@@ -1,0 +1,175 @@
+/* Global Styles */
+.mood-tracker-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Container */
+.mood-tracker-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.mood-tracker-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mood Selection */
+.mood-tracker-mood-select {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.mood-tracker-mood-select label {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mood-tracker-mood-select input {
+    display: none;
+}
+
+.mood-tracker-mood {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mood-tracker-mood[data-mood="happy"] {
+    background-color: #ffcc00;
+}
+
+.mood-tracker-mood[data-mood="neutral"] {
+    background-color: #cccccc;
+}
+
+.mood-tracker-mood[data-mood="sad"] {
+    background-color: #007bff;
+}
+
+.mood-tracker-mood[data-mood="angry"] {
+    background-color: #ff4c4c;
+}
+
+/* Text Areas */
+.mood-tracker-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.mood-tracker-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.mood-tracker-button:hover {
+    background-color: #0056b3;
+}
+
+/* Journal Section */
+.mood-tracker-journal-section {
+    margin-top: 30px;
+}
+
+.mood-tracker-journal-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mood-tracker-journal-entry {
+    margin-bottom: 15px;
+}
+
+.mood-tracker-journal-entry-textarea {
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.mood-tracker-entries-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mood-tracker-entries-list-item {
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.mood-tracker-date-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Back Button */
+.mood-tracker-back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mood-tracker-back-button img {
+    width: 24px;
+    height: auto;
+    display: block;
+}
+
+.mood-tracker-container {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.mood-tracker-back-button:hover {
+    background-color: #0056b3;
+    width: 24px;
+    border-radius: 400px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+.mood-tracker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh; /* Para centrar verticalmente */
+    max-width: 600px; /* Define un ancho máximo */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}

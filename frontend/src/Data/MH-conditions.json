@@ -1,0 +1,554 @@
+[
+  {
+    "id": "04E20CC0",
+    "mental_illness": "Major Depressive Disorder",
+    "symptoms": [
+      "Persistent sad mood",
+      "Loss of interest in activities",
+      "Changes in appetite or weight",
+      "Sleep disturbances",
+      "Fatigue"
+    ],
+    "treatment": [
+      "Psychotherapy",
+      "Antidepressant medications",
+      "Lifestyle changes"
+    ],
+    "how_to_help": "Offer emotional support, encourage professional help, and be patient and understanding.",
+    "img": "https://i.pinimg.com/564x/49/e9/9c/49e99c122be70c577e5e360f24452c58.jpg",
+    "description": "A mood disorder characterized by persistent feelings of sadness, hopelessness, and loss of interest in activities."
+  },
+  {
+    "id": "BF999D7E",
+    "mental_illness": "Generalized Anxiety Disorder",
+    "symptoms": [
+      "Excessive worry",
+      "Restlessness",
+      "Difficulty concentrating",
+      "Muscle tension",
+      "Sleep problems"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy",
+      "Anti-anxiety medications",
+      "Relaxation techniques"
+    ],
+    "how_to_help": "Listen without judgment, encourage relaxation techniques, and support their treatment plan.",
+    "img": "https://i.pinimg.com/564x/3f/d3/7c/3fd37c518e4052b1010fce696fdda98f.jpg",
+    "description": "A chronic condition characterized by excessive, long-lasting anxiety and worries about nonspecific life events, objects, and situations."
+  },
+  {
+    "id": "64308EE2",
+    "mental_illness": "Bipolar Disorder",
+    "symptoms": [
+      "Manic episodes",
+      "Depressive episodes",
+      "Mood swings",
+      "Changes in energy levels",
+      "Impulsive behavior"
+    ],
+    "treatment": [
+      "Mood stabilizers",
+      "Psychotherapy",
+      "Lifestyle management"
+    ],
+    "how_to_help": "Learn about the condition, be supportive during mood episodes, and encourage medication adherence.",
+    "img": "https://i.pinimg.com/564x/1f/af/b6/1fafb6f2a261cf7962483673ba8d5f21.jpg",
+    "description": "A mental health condition that causes extreme mood swings that include emotional highs (mania or hypomania) and lows (depression)."
+  },
+  {
+    "id": "86879424",
+    "mental_illness": "Schizophrenia",
+    "symptoms": [
+      "Hallucinations",
+      "Delusions",
+      "Disorganized speech",
+      "Lack of motivation",
+      "Social withdrawal"
+    ],
+    "treatment": [
+      "Antipsychotic medications",
+      "Psychosocial interventions",
+      "Cognitive remediation"
+    ],
+    "how_to_help": "Encourage treatment adherence, provide a calm environment, and be patient and supportive.",
+    "img": "https://i.pinimg.com/564x/de/66/2c/de662c6b99675eea2cc31e6baec71927.jpg",
+    "description": "A chronic and severe mental disorder that affects how a person thinks, feels, and behaves, often experiencing reality abnormally."
+  },
+  {
+    "id": "D23AC533",
+    "mental_illness": "Obsessive-Compulsive Disorder (OCD)",
+    "symptoms": [
+      "Intrusive thoughts",
+      "Compulsive behaviors",
+      "Anxiety",
+      "Perfectionism",
+      "Fear of contamination"
+    ],
+    "treatment": [
+      "Exposure and response prevention therapy",
+      "Cognitive-behavioral therapy",
+      "SSRI medications"
+    ],
+    "how_to_help": "Don't enable compulsions, encourage treatment, and educate yourself about OCD.",
+    "img": "https://i.pinimg.com/564x/03/3d/51/033d516ba7c5482b6c900ba3a9ea38cf.jpg",
+    "description": "A mental health disorder characterized by uncontrollable, reoccurring thoughts (obsessions) and/or behaviors (compulsions) that a person feels the urge to repeat over and over."
+  },
+  {
+    "id": "690E2322",
+    "mental_illness": "Post-Traumatic Stress Disorder (PTSD)",
+    "symptoms": [
+      "Flashbacks",
+      "Nightmares",
+      "Avoidance of triggers",
+      "Hypervigilance",
+      "Emotional numbness"
+    ],
+    "treatment": [
+      "Trauma-focused psychotherapy",
+      "EMDR therapy",
+      "Medications for symptom management"
+    ],
+    "how_to_help": "Provide a safe environment, be patient, and encourage professional help.",
+    "img": "https://i.pinimg.com/564x/c5/fa/0d/c5fa0dcbccadff44c187d16c73af279f.jpg",
+    "description": "A mental health condition triggered by experiencing or witnessing a terrifying event, causing flashbacks, nightmares, and severe anxiety."
+  },
+  {
+    "id": "93EE874D",
+    "mental_illness": "Social Anxiety Disorder",
+    "symptoms": [
+      "Intense fear of social situations",
+      "Avoidance of social events",
+      "Physical symptoms like sweating or trembling",
+      "Negative self-talk",
+      "Fear of judgment"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy",
+      "Exposure therapy",
+      "Anti-anxiety medications"
+    ],
+    "how_to_help": "Offer gentle encouragement, respect their boundaries, and celebrate small victories.",
+    "img": "https://i.pinimg.com/564x/5d/d7/e6/5dd7e67e18f26aafbaacd4be06ae15f9.jpg",
+    "description": "A chronic mental health condition where social interactions cause irrational anxiety, fear, self-consciousness, and embarrassment."
+  },
+  {
+    "id": "5B75F405",
+    "mental_illness": "Eating Disorders (e.g., Anorexia, Bulimia)",
+    "symptoms": [
+      "Extreme weight loss or gain",
+      "Obsession with food and body image",
+      "Restrictive eating habits",
+      "Binge eating",
+      "Purging behaviors"
+    ],
+    "treatment": [
+      "Nutritional counseling",
+      "Psychotherapy",
+      "Medical monitoring"
+    ],
+    "how_to_help": "Focus on emotional support rather than food, encourage professional help, and avoid body-shaming language.",
+    "img": "https://i.pinimg.com/564x/a4/15/0d/a4150dda436a508f485a545cebc1a5b3.jpg",
+    "description": "Serious conditions related to persistent eating behaviors that negatively impact health, emotions, and ability to function in important areas of life."
+  },
+  {
+    "id": "49737AAC",
+    "mental_illness": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+    "symptoms": [
+      "Difficulty focusing",
+      "Hyperactivity",
+      "Impulsiveness",
+      "Disorganization",
+      "Forgetfulness"
+    ],
+    "treatment": [
+      "Stimulant medications",
+      "Behavioral therapy",
+      "Educational support"
+    ],
+    "how_to_help": "Help with organization, be patient with forgetfulness, and encourage professional treatment.",
+    "img": "https://i.pinimg.com/564x/67/39/f1/6739f1e4967c8442b26a55f361602c3b.jpg",
+    "description": "A chronic condition including attention difficulty, hyperactivity, and impulsiveness, often beginning in childhood and potentially continuing into adulthood."
+  },
+  {
+    "id": "F2DB3686",
+    "mental_illness": "Borderline Personality Disorder",
+    "symptoms": [
+      "Unstable relationships",
+      "Fear of abandonment",
+      "Impulsive behaviors",
+      "Mood swings",
+      "Self-harm"
+    ],
+    "treatment": [
+      "Dialectical behavior therapy",
+      "Psychotherapy",
+      "Medication for symptom management"
+    ],
+    "how_to_help": "Set clear boundaries, encourage therapy, and avoid reinforcing harmful behaviors.",
+    "img": "https://i.pinimg.com/564x/55/42/ae/5542aee81e786b8edeeceb0768188912.jpg",
+    "description": "A mental health disorder characterized by unstable moods, behavior, and relationships, often marked by intense emotions and impulsivity."
+  },
+  {
+    "id": "5F92DB48",
+    "mental_illness": "Panic Disorder",
+    "symptoms": [
+      "Sudden panic attacks",
+      "Fear of future attacks",
+      "Avoidance behavior",
+      "Physical symptoms like chest pain or shortness of breath",
+      "Feeling of losing control"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy",
+      "Exposure therapy",
+      "Anti-anxiety medications"
+    ],
+    "how_to_help": "Stay calm during attacks, encourage deep breathing, and support their treatment plan.",
+    "img": "https://i.pinimg.com/564x/a1/3c/e0/a13ce036e4291b05fb31a9ddfff23566.jpg",
+    "description": "An anxiety disorder characterized by unexpected and repeated episodes of intense fear accompanied by physical symptoms."
+  },
+  {
+    "id": "81D9F9BB",
+    "mental_illness": "Autism Spectrum Disorder",
+    "symptoms": [
+      "Difficulty with social interactions",
+      "Repetitive behaviors",
+      "Sensory sensitivities",
+      "Communication challenges",
+      "Intense interests in specific topics"
+    ],
+    "treatment": [
+      "Behavioral therapy",
+      "Speech and occupational therapy",
+      "Social skills training"
+    ],
+    "how_to_help": "Be patient, respect their sensory needs, and celebrate their unique perspectives.",
+    "img": "https://i.pinimg.com/564x/89/79/81/897981de42f775948afb11e58fb6bb9e.jpg",
+    "description": "A developmental disorder that affects communication and behavior, with a wide range of symptoms and severity."
+  },
+  {
+    "id": "8B24F624",
+    "mental_illness": "Substance Use Disorder",
+    "symptoms": [
+      "Inability to control substance use",
+      "Continued use despite negative consequences",
+      "Withdrawal symptoms",
+      "Cravings",
+      "Neglect of responsibilities"
+    ],
+    "treatment": [
+      "Detoxification",
+      "Rehabilitation programs",
+      "Cognitive-behavioral therapy",
+      "Support groups"
+    ],
+    "how_to_help": "Encourage professional help, avoid enabling behaviors, and offer support during recovery.",
+    "img": "https://i.pinimg.com/564x/3e/43/cd/3e43cda102cc57675c489297e28242e2.jpg",
+    "description": "A complex condition in which there is uncontrolled use of a substance despite harmful consequences, often involving cycles of relapse and remission."
+  },
+  {
+    "id": "B3F97C4C",
+    "mental_illness": "Dissociative Identity Disorder",
+    "symptoms": [
+      "Presence of two or more distinct personalities",
+      "Memory gaps",
+      "Depersonalization",
+      "Identity confusion",
+      "Mood changes"
+    ],
+    "treatment": [
+      "Psychotherapy",
+      "Integration therapy",
+      "Trauma-focused therapy"
+    ],
+    "how_to_help": "Be patient and understanding, respect all identities, and encourage professional treatment.",
+    "img": "https://i.pinimg.com/564x/8b/1b/ab/8b1babc6f96a3877eb4932534a7207cb.jpg",
+    "description": "A mental health condition characterized by the presence of two or more distinct personality states or identities."
+  },
+  {
+    "id": "586CA908",
+    "mental_illness": "Agoraphobia",
+    "symptoms": [
+      "Fear of open or crowded spaces",
+      "Anxiety about leaving home",
+      "Panic attacks in feared situations",
+      "Avoidance of public transportation",
+      "Need for a companion"
+    ],
+    "treatment": [
+      "Exposure therapy",
+      "Cognitive-behavioral therapy",
+      "Anti-anxiety medications"
+    ],
+    "how_to_help": "Offer to accompany them to feared places, encourage gradual exposure, and be patient with their progress.",
+    "img": "https://i.pinimg.com/564x/2b/93/da/2b93da6c002489fa654e72b44a7b876b.jpg",
+    "description": "An anxiety disorder characterized by fear and avoidance of places and situations that might cause panic, helplessness, or embarrassment."
+  },
+  {
+    "id": "9E0D9DFC",
+    "mental_illness": "Body Dysmorphic Disorder",
+    "symptoms": [
+      "Obsession with perceived flaws in appearance",
+      "Excessive grooming",
+      "Seeking reassurance about appearance",
+      "Avoidance of social situations",
+      "Frequent mirror checking"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy",
+      "Exposure therapy",
+      "SSRI medications"
+    ],
+    "how_to_help": "Avoid commenting on appearance, encourage self-acceptance, and support professional treatment.",
+    "img": "https://i.pinimg.com/564x/45/4c/6a/454c6aec2d24d02314797a560f449288.jpg",
+    "description": "A mental health disorder in which a person can't stop thinking about one or more perceived defects or flaws in their appearance."
+  },
+  {
+    "id": "E87B62F2",
+    "mental_illness": "Trichotillomania",
+    "symptoms": [
+      "Compulsive hair pulling",
+      "Noticeable hair loss",
+      "Attempts to stop pulling",
+      "Distress about the behavior",
+      "Social or work impairment"
+    ],
+    "treatment": [
+      "Habit reversal training",
+      "Cognitive-behavioral therapy",
+      "N-acetylcysteine supplements"
+    ],
+    "how_to_help": "Avoid judgment, encourage professional help, and support stress-reduction techniques.",
+    "img": "https://i.pinimg.com/564x/ab/b5/38/abb538b73b6a04788cc5e531e832b127.jpg",
+    "description": "A mental disorder characterized by recurrent, irresistible urges to pull out hair from the scalp, eyebrows, or other areas of the body."
+  },
+  {
+    "id": "C0E766B0",
+    "mental_illness": "Seasonal Affective Disorder",
+    "symptoms": [
+      "Depression during specific seasons",
+      "Changes in sleep patterns",
+      "Weight gain",
+      "Social withdrawal",
+      "Fatigue"
+    ],
+    "treatment": [
+      "Light therapy",
+      "Psychotherapy",
+      "Antidepressant medications"
+    ],
+    "how_to_help": "Encourage outdoor activities, support light therapy use, and be understanding of seasonal mood changes.",
+    "img": "https://i.pinimg.com/564x/19/f9/a1/19f9a1f3b6abc1238df56caff3274df3.jpg",
+    "description": "A type of depression related to changes in seasons, typically beginning and ending at about the same times every year."
+  },
+  {
+    "id": "F3B8AFEC",
+    "mental_illness": "Narcissistic Personality Disorder",
+    "symptoms": [
+      "Grandiose sense of self-importance",
+      "Preoccupation with fantasies of success",
+      "Belief in own superiority",
+      "Need for admiration",
+      "Lack of empathy"
+    ],
+    "treatment": [
+      "Long-term psychotherapy",
+      "Cognitive-behavioral therapy",
+      "Group therapy"
+    ],
+    "how_to_help": "Set clear boundaries, avoid feeding into grandiose beliefs, and encourage empathy and self-reflection.",
+    "img": "https://i.pinimg.com/564x/51/61/7b/51617b32533075712628fe3e5d3d2e7d.jpg",
+    "description": "A mental condition in which people have an inflated sense of their own importance and a deep need for excessive attention and admiration."
+  },
+  {
+    "id": "F7DE8F2C",
+    "mental_illness": "Insomnia Disorder",
+    "symptoms": [
+      "Difficulty falling asleep",
+      "Waking up during the night",
+      "Early morning awakening",
+      "Daytime fatigue",
+      "Mood disturbances"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy for insomnia",
+      "Sleep hygiene improvements",
+      "Short-term use of sleep medications"
+    ],
+    "how_to_help": "Encourage consistent sleep schedules, create a relaxing bedtime routine, and support professional treatment.",
+    "img": "https://i.pinimg.com/564x/25/ab/2b/25ab2bde8c4e235789d37e350b099674.jpg",
+    "description": "A common sleep disorder characterized by difficulty falling asleep, staying asleep, or both, despite adequate opportunity for sleep."
+  },
+  {
+    "id": "F44D69DC",
+    "mental_illness": "Hoarding Disorder",
+    "symptoms": [
+      "Difficulty discarding possessions",
+      "Excessive acquisition of items",
+      "Cluttered living spaces",
+      "Distress about discarding",
+      "Impairment in daily functioning"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy",
+      "Exposure therapy",
+      "Organizational skills training"
+    ],
+    "how_to_help": "Avoid forceful decluttering, encourage professional help, and offer non-judgmental support.",
+    "img": "https://i.pinimg.com/564x/e3/64/94/e3649478e258d3de1e5f49edcf120425.jpg",
+    "description": "A persistent difficulty discarding or parting with possessions because of a perceived need to save them, resulting in excessive accumulation."
+  },
+  {
+    "id": "53A71CA5",
+    "mental_illness": "Premenstrual Dysphoric Disorder",
+    "symptoms": [
+      "Severe mood swings",
+      "Irritability",
+      "Depression",
+      "Anxiety",
+      "Physical symptoms like bloating or breast tenderness"
+    ],
+    "treatment": [
+      "Antidepressant medications",
+      "Hormonal treatments",
+      "Lifestyle changes"
+    ],
+    "how_to_help": "Be understanding of mood changes, encourage stress-reduction techniques, and support professional treatment.",
+    "img": "https://i.pinimg.com/564x/6d/5b/18/6d5b188ddb08ff77c2d9dede827c7d1a.jpg",
+    "description": "A severe form of premenstrual syndrome causing extreme mood shifts that can disrupt daily life and relationships."
+  },
+  {
+    "id": "F4BAAB8F",
+    "mental_illness": "Adjustment Disorder",
+    "symptoms": [
+      "Emotional or behavioral symptoms in response to a stressor",
+      "Anxiety",
+      "Depression",
+      "Conduct disturbances",
+      "Impairment in social or occupational functioning"
+    ],
+    "treatment": [
+      "Short-term psychotherapy",
+      "Stress management techniques",
+      "Support groups"
+    ],
+    "how_to_help": "Offer emotional support, encourage healthy coping mechanisms, and be patient during the adjustment period.",
+    "img": "https://i.pinimg.com/564x/09/f0/77/09f0775ba8987f12d077328472f066aa.jpg",
+    "description": "A group of symptoms, such as stress, feeling sad or hopeless, and physical symptoms that can occur after experiencing a stressful life event."
+  },
+  {
+    "id": "D236A720",
+    "mental_illness": "Specific Phobias",
+    "symptoms": [
+      "Intense fear of specific objects or situations",
+      "Avoidance behavior",
+      "Panic attacks when exposed to phobia",
+      "Recognition that fear is excessive",
+      "Interference with daily life"
+    ],
+    "treatment": [
+      "Exposure therapy",
+      "Cognitive-behavioral therapy",
+      "Relaxation techniques"
+    ],
+    "how_to_help": "Don't force exposure to feared objects/situations, encourage professional help, and offer support during exposure exercises.",
+    "img": "https://i.pinimg.com/564x/f6/01/d2/f601d2b3fde604b199a4b760ee1af45a.jpg",
+    "description": "An intense, irrational fear of something that poses little or no actual danger, often leading to avoidance behaviors."
+  },
+  {
+    "id": "83DEFE5A",
+    "mental_illness": "Schizoaffective Disorder",
+    "symptoms": [
+      "Symptoms of schizophrenia",
+      "Mood episodes (depression or mania)",
+      "Hallucinations",
+      "Delusions",
+      "Disorganized thinking"
+    ],
+    "treatment": [
+      "Antipsychotic medications",
+      "Mood stabilizers",
+      "Psychotherapy"
+    ],
+    "how_to_help": "Encourage medication adherence, provide a stable environment, and support their treatment plan.",
+    "img": "https://i.pinimg.com/564x/f3/34/ff/f334ff415e105388b883c4c1aaf3b6cd.jpg",
+    "description": "A mental health disorder characterized by a combination of schizophrenia symptoms and mood disorder symptoms."
+  },
+  {
+    "id": "F6C1329C",
+    "mental_illness": "Persistent Depressive Disorder (Dysthymia)",
+    "symptoms": [
+      "Chronic low mood",
+      "Low self-esteem",
+      "Poor concentration",
+      "Changes in appetite",
+      "Sleep disturbances"
+    ],
+    "treatment": [
+      "Long-term psychotherapy",
+      "Antidepressant medications",
+      "Lifestyle changes"
+    ],
+    "how_to_help": "Offer consistent emotional support, encourage professional help, and support positive lifestyle changes.",
+    "img": "https://i.pinimg.com/564x/08/f3/da/08f3da7d9d52534324842db916bd1094.jpg",
+    "description": "A continuous, long-term form of depression characterized by a depressed mood that lasts for at least two years."
+  },
+  {
+    "id": "906F1AC2",
+    "mental_illness": "Excoriation (Skin-Picking) Disorder",
+    "symptoms": [
+      "Recurrent skin picking",
+      "Noticeable skin lesions",
+      "Attempts to stop picking",
+      "Distress about the behavior",
+      "Impairment in social or occupational functioning"
+    ],
+    "treatment": [
+      "Habit reversal training",
+      "Cognitive-behavioral therapy",
+      "N-acetylcysteine supplements"
+    ],
+    "how_to_help": "Avoid drawing attention to skin lesions, encourage professional help, and support stress-reduction techniques.",
+    "img": "https://i.pinimg.com/564x/fb/dd/26/fbdd263a6c387d3b116b8997e53dfb72.jpg",
+    "description": "A mental health condition characterized by recurrent picking at one's own skin, often resulting in skin lesions and significant distress."
+  },
+  {
+    "id": "460DF5F3",
+    "mental_illness": "Avoidant Personality Disorder",
+    "symptoms": [
+      "Social inhibition",
+      "Feelings of inadequacy",
+      "Hypersensitivity to criticism",
+      "Avoidance of social situations",
+      "Extreme shyness"
+    ],
+    "treatment": [
+      "Long-term psychotherapy",
+      "Social skills training",
+      "Cognitive-behavioral therapy"
+    ],
+    "how_to_help": "Offer gentle encouragement for social interactions, be patient and supportive, and avoid criticism.",
+    "img": "https://i.pinimg.com/564x/ef/ab/92/efab9204c129be836a332c0c8ca24902.jpg",
+    "description": "A mental health condition characterized by extreme shyness, feelings of inadequacy, and sensitivity to rejection."
+  },
+  {
+    "id": "ED45C388",
+    "mental_illness": "Intermittent Explosive Disorder",
+    "symptoms": [
+      "Recurrent behavioral outbursts",
+      "Aggression disproportionate to the situation",
+      "Impulsivity",
+      "Irritability",
+      "Feelings of tension before outbursts"
+    ],
+    "treatment": [
+      "Cognitive-behavioral therapy",
+      "Anger management training",
+      "Medications for impulse control"
+    ],
+    "how_to_help": "Encourage professional help, avoid confrontations during outbursts, and support anger management techniques.",
+    "img": "https://i.pinimg.com/564x/58/77/db/5877db572cc8ac7317bca7a77d2c7bcb.jpg",
+    "description": "A behavioral disorder characterized by explosive outbursts of anger and violence, often to the point of rage, that are disproportionate to the situation at hand."
+  }
+]
