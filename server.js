@@ -38,6 +38,7 @@ app.use(
   })
 );
 
+console.log(process.env.SESSION_SECRET)
 // Configuración de sesiones
 app.use(
   session({
@@ -45,9 +46,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: process.env.NODE_ENV === "production", // Cookies seguras en producción
-      httpOnly: true, // Protege la cookie de accesos desde JS
-      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax", // Cookies cruzadas
+      secure: process.env.NODE_ENV === "production", // Solo se envían en HTTPS
+      httpOnly: true, // Protege las cookies contra acceso por JavaScript
+      sameSite: "none", // Necesario para solicitudes cruzadas
     },
   })
 );

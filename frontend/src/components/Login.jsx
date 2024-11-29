@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import api from "../api"
 import "../Css/register.css"; // Importa el CSS específico para el componente
 
 const Login = () => {
@@ -8,38 +10,45 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5001/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      credentials: "include", // Permite enviar cookies de sesión
-      body: JSON.stringify({
-        name,
-        password,
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          if (response.status === 401) {
-            throw new Error("Invalid username or password");
-          }
-          throw new Error(`Error: ${response.status}`);
+    try {
+      // Realiza la solicitud POST con Axios
+      const response = await api.post(
+        "/login", // Endpoint del backend
+        { name, password }, // Datos a enviar
+        {
+          withCredentials: true, // Necesario para enviar cookies de sesión
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-        return response.json();
-      })
-      .then((data) => {
-        console.log("Login successful:", data);
-        navigate("/"); // Redirige al home usando `useNavigate`
-      })
-      .catch((error) => {
-        console.error("Login error:", error);
+      );
+
+      // Procesa la respuesta exitosa
+      console.log("Login successful:", response.data);
+      navigate("/"); // Redirige al home
+    } catch (error) {
+      // Manejo de errores
+      if (error.response) {
+        // El servidor respondió con un error
+        if (error.response.status === 401) {
+          setErrorMessage("Invalid username or password");
+        } else {
+          setErrorMessage(`Error: ${error.response.status}`);
+        }
+      } else if (error.request) {
+        // La solicitud se envió pero no hubo respuesta
+        setErrorMessage("No response from server. Please try again later.");
+      } else {
+        // Error al configurar la solicitud
         setErrorMessage(error.message || "Failed to log in.");
-      });
+      }
+      console.error("Login error:", error);
+    }
   };
+
 
   return (
     <div className="login-container">
