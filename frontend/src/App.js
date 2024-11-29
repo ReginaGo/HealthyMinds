@@ -58,4 +58,6 @@ const ConditionDetailWrapper = ({ getConditionById }) => {
   return <ConditionDetails condition={condition} />;
 };
 
+
+
 export default App;

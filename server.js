@@ -204,6 +204,10 @@ app.listen(PORT, () => {
   console.log(`PP team Rafa listening on port ${PORT}`);
 });
 
+app.get("/api/data", (req, res) => {
+  res.json({ message: "Hello from the backend!" });
+});
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/build")));
   app.get("*", (req, res) => {
@@ -211,6 +215,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.get("/api/data", (req, res) => {
-  res.json({ message: "Hello from the backend!" });
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
