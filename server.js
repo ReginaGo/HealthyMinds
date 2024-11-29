@@ -1,5 +1,5 @@
 require("dotenv").config();
-const explicitWords = require('./backend/bad-words.json');
+const explicitWords = require('./bad-words.json');
 
 
 const cors = require('cors');
