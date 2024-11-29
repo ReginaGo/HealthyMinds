@@ -22,7 +22,6 @@ function Blog() {
         const response = await api.get("/blog", {
           withCredentials: true,
         });
-  
         console.log("Response:", response);
   
         if (response.status === 401) {
