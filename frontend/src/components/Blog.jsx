@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import api from '../api'
 
 
 function Blog() {
@@ -14,32 +16,39 @@ function Blog() {
   
   // Obtener los posts existentes desde el backend
   useEffect(() => {
-    fetch("http://localhost:5001/blog", {
-      method: "GET",
-      credentials: "include",
-    })
-      .then((response) => {
-        if (!response.ok) {
-          if (response.status === 401) {
-            window.location.href = "/login";
-          }
-          throw new Error(`Error: ${response.status}`);
+    const fetchData = async () => {
+      try {
+        console.log("Fetching posts...");
+        const response = await api.get("http://localhost:5001/blog", {
+          withCredentials: true,
+        });
+  
+        console.log("Response:", response);
+  
+        if (response.status === 401) {
+          console.warn("Unauthorized: Redirecting to login.");
+          window.location.href = "/login";
+          return;
         }
-        return response.json();
-      })
-      .then((data) => {
-        // Asegúrate de que `posts` sea un arreglo
+  
+        const data = response.data;
+        console.log("Data received:", data);
+  
+        // Asegúrate de que `data.posts` sea un arreglo antes de asignarlo
         setPosts(Array.isArray(data.posts) ? data.posts : []);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error("Error loading posts:", error);
         setError("Failed to load blog posts.");
-      });
+      }
+    };
+  
+    fetchData();
   }, []);
+  
 
   
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
   
     // Validación: Número máximo de palabras
@@ -69,36 +78,38 @@ function Blog() {
       return;
     }
   
-    // Enviar datos al backend
-    fetch("http://localhost:5001/create-post", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username, // Asegúrate de que este valor esté definido
-        title,
-        description,
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to create post");
+    try {
+      // Enviar datos al backend con Axios
+      const response = await axios.post(
+        "http://localhost:5001/create-post",
+        {
+          username, // Asegúrate de que este valor esté definido
+          title,
+          description,
+        },
+        {
+          withCredentials: true,
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-        return response.json(); // Aquí el backend debe devolver el nuevo post creado
-      })
-      .then((newPost) => {
-        // Actualizar el estado con el nuevo post
-        setPosts((prevPosts) => [newPost, ...prevPosts]);
+      );
   
-        // Limpiar el formulario
-        setTitle("");
-        setDescription("");
-      })
-      .catch((error) => console.error("Error:", error));
+      // Axios maneja automáticamente el JSON en la respuesta
+      const newPost = response.data;
+  
+      // Actualizar el estado con el nuevo post
+      setPosts((prevPosts) => [newPost, ...prevPosts]);
+  
+      // Limpiar el formulario
+      setTitle("");
+      setDescription("");
+    } catch (error) {
+      console.error("Error creating post:", error);
+      setError("Failed to create post.");
+    }
   };
-
+  
   return (
     <div>
       {/* Navbar */}

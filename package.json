@@ -5,9 +5,13 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "start": "node server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "server": "nodemon server.js",
+    "frontend": "npm start --prefix frontend",
+    "frontend-install": "npm install --prefix frontend",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [
     "mental-health",
@@ -21,6 +25,7 @@
   "author": "Regina Gomez, Fatima Walls & Carlos Bejar",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^9.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
