@@ -32,7 +32,7 @@ app.use(
 
 // Cors para respuestas de back and front
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://healthyminds-1.onrender.com',
   credentials: true,
 }));
 
