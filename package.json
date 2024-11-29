@@ -1,15 +1,30 @@
 {
-  "name": "fullstack-app",
+  "name": "webp",
   "version": "1.0.0",
+  "description": "A web page dedicated to spread awareness on mental health and its impact in today's society",
+  "main": "script.js",
   "scripts": {
-    "install_front": "npm install --prefix frontend",
-    "install_back": "npm install --prefix backend",
-    "client": "npm start --prefix frontend",
-    "server": "npm start --prefix backend",
-    "start": "concurrently \"npm start --prefix frontend\" \"npm start --prefix backend\"",
-    "install": "npm run install_front && npm run install_back"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "keywords": [
+    "mental-health",
+    "condition",
+    "help",
+    "mind",
+    "rest",
+    "mindfull",
+    "support"
+  ],
+  "author": "Regina Gomez, Fatima Walls & Carlos Bejar",
+  "license": "ISC",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3"
   }
 }
