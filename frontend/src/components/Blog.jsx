@@ -11,7 +11,7 @@ function Blog() {
   const [error, setError] = useState(null); // Manejo de errores para las solicitudes
   const username = 'currentUser'; // Cambiar esto según el usuario actual
 
-  const ApiUrl = process.env.API_URL;
+  const ApiUrl = process.env.REACT_APP_API_URL;
   // Obtener los posts existentes desde el backend
   useEffect(() => {
     fetch(`${ApiUrl}/blog`, {
@@ -216,5 +216,7 @@ function Blog() {
     </div>
   );
 }
+
+console.log('API URL:', process.env.REACT_APP_API_URL);
 
 export default Blog;
