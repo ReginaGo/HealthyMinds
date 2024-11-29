@@ -5,7 +5,7 @@ let apiPath = "";
 if (process.env.NODE_ENV === "production") {
   apiPath = "https://healthyminds-1.onrender.com"; // URL del backend en producción
 } else {
-  apiPath = "http://localhost:5000"; // URL del backend en desarrollo
+  apiPath = "http://localhost:5001"; // URL del backend en desarrollo
 }
 
 const api = axios.create({
