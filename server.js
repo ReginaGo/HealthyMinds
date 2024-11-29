@@ -20,26 +20,35 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "ejs");
 
 // Middleware de sesión
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: { secure: true },
-    sameSite: "none",
-  })
-);
-
-// Cors para respuestas de back and front
 const allowedOrigins = [
-  "http://localhost:3000", // Para desarrollo local
-  "https://healthyminds-front.onrender.com", // URL del frontend en producción
+  "http://localhost:3000", // Frontend en desarrollo
+  "https://healthyminds-front.onrender.com", // Frontend en producción
 ];
 
 app.use(
   cors({
-    origin: "*",
-    credentials: true, // Permite el uso de cookies/sesiones
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true, // Permitir cookies y sesiones
+  })
+);
+
+// Configuración de sesiones
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || "your-secret-key",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: process.env.NODE_ENV === "production", // Cookies seguras en producción
+      httpOnly: true, // Protege la cookie de accesos desde JS
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax", // Cookies cruzadas
+    },
   })
 );
 
