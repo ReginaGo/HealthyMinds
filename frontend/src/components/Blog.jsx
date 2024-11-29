@@ -11,9 +11,10 @@ function Blog() {
   const [error, setError] = useState(null); // Manejo de errores para las solicitudes
   const username = 'currentUser'; // Cambiar esto según el usuario actual
 
+  const ApiUrl = process.env.API_URL;
   // Obtener los posts existentes desde el backend
   useEffect(() => {
-    fetch("http://localhost:5001/blog", {
+    fetch(`${ApiUrl}/blog`, {
       method: "GET",
       credentials: "include",
     })
@@ -69,7 +70,7 @@ function Blog() {
     }
   
     // Enviar datos al backend
-    fetch("http://localhost:5001/create-post", {
+    fetch(`${ApiUrl}/create-post`, {
       method: "POST",
       credentials: "include",
       headers: {
