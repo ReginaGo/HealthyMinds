@@ -19,7 +19,7 @@ function Blog() {
     const fetchData = async () => {
       try {
         console.log("Fetching posts...");
-        const response = await api.get("http://localhost:5001/blog", {
+        const response = await api.get("/blog", {
           withCredentials: true,
         });
   
@@ -81,7 +81,7 @@ function Blog() {
     try {
       // Enviar datos al backend con Axios
       const response = await axios.post(
-        "http://localhost:5001/create-post",
+        "/create-post",
         {
           username, // Asegúrate de que este valor esté definido
           title,
