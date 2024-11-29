@@ -23,10 +23,7 @@ function App() {
   // Rutas donde NO queremos mostrar el Navbar
   const hideNavbarRoutes = ['/login', '/register', '/logout'];
 
-  useEffect(() => {
-    // Imprime en consola cada vez que cambie la ruta
-    console.log("Current Route:", location.pathname);
-  }, [location]);
+  
 
   return (
     <div>
