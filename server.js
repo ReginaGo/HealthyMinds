@@ -31,10 +31,24 @@ app.use(
 );
 
 // Cors para respuestas de back and front
-app.use(cors({
-  origin: 'https://healthyminds-1.onrender.com',
-  credentials: true,
-}));
+const allowedOrigins = [
+  "http://localhost:3000", // Para desarrollo local
+  "https://healthyminds-front.onrender.com", // URL del frontend en producción
+];
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      // Permitir solicitudes sin origen (herramientas como Postman)
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true, // Permite el uso de cookies/sesiones
+  })
+);
 
 // MongoDB connection
 const mongoUrl = `mongodb+srv://${process.env.MONGUSER}:${process.env.MONGPASS}@cluster0.7d4m3.mongodb.net/${process.env.MONGDB}?retryWrites=true&w=majority&appName=Cluster0`;
