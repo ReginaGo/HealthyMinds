@@ -1,46 +1,33 @@
 {
-  "name": "webp",
-  "version": "1.0.0",
-  "description": "A web page dedicated to spread awareness on mental health and its impact in today's society",
-  "main": "script.js",
-  "scripts": {
-    "start": "node server.js",
-
-    "server": "nodemon server.js",
-
-    "client": "npm start --prefix client",
-
-    "client-install": "npm install --prefix client",
-
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-
-    "render-postbuild": 
-
-    "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "keywords": [
-    "mental-health",
-    "condition",
-    "help",
-    "mind",
-    "rest",
-    "mindfull",
-    "support"
-  ],
-  "author": "Regina Gomez, Fatima Walls & Carlos Bejar",
-  "license": "ISC",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
+    "axios": "^1.7.8",
+    "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
-    "ejs": "^3.1.10",
-    "express": "^4.21.1",
-    "express-session": "^1.18.1",
-    "mongodb": "^6.11.0",
-    "mongoose": "^8.8.3",
-    "nodemon": "^3.1.7",
-    "path": "^0.12.7"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.1",
+    "react-scripts": "^5.0.1"
   },
-  "devDependencies": {
-    "concurrently": "^9.1.0"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5001"
 }
