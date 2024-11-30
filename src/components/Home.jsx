@@ -19,8 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     // Usamos axios para realizar la solicitud GET
-    axios
-      .get(apiPath, { withCredentials: true }) // Añade `withCredentials` si necesitas cookies
+    axios.get("https://backend-kv8d.onrender.com/login", { withCredentials: true }) // Añade `withCredentials` si necesitas cookies
       .then((response) => {
         setUsername(response.data.username || "Guest");
         setIsLoading(false);
