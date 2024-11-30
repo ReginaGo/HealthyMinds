@@ -4,14 +4,19 @@
   "description": "A web page dedicated to spread awareness on mental health and its impact in today's society",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "start": "node server.js",
+
     "server": "nodemon server.js",
-    "frontend": "npm start --prefix frontend",
-    "frontend-install": "npm install --prefix frontend",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+
+    "client": "npm start --prefix client",
+
+    "client-install": "npm install --prefix client",
+
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+
+    "render-postbuild": 
+
+    "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [
     "mental-health",
@@ -25,7 +30,6 @@
   "author": "Regina Gomez, Fatima Walls & Carlos Bejar",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^9.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
@@ -35,5 +39,8 @@
     "mongoose": "^8.8.3",
     "nodemon": "^3.1.7",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

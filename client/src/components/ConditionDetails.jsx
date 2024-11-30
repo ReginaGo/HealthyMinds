@@ -9,7 +9,14 @@ const ConditionDetails = () => {
 
   useEffect(() => {
     // Llama al backend para obtener los detalles del padecimiento
-    fetch(`http://localhost:5001/condition/${id}`)
+    let apiPath = "";
+
+    if (process.env.NODE_ENV === "production") {
+      apiPath = "https://backend-kv8d.onrender.com"; // URL del backend en producción
+    } else {
+      apiPath = "http://localhost:5001"; // URL del backend en desarrollo
+    }
+    fetch(apiPath+`/condition/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch condition details");

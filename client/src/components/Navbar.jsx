@@ -4,9 +4,18 @@ import { Link, useNavigate } from 'react-router-dom';
 function Navbar() {
   const navigate = useNavigate();
 
+  let apiPath = "";
+
+if (process.env.NODE_ENV === "production") {
+  apiPath = "https://backend-kv8d.onrender.com"; // URL del backend en producción
+} else {
+  apiPath = "http://localhost:5001"; // URL del backend en desarrollo
+}
+
+
   const handleLogout = (e) => {
     e.preventDefault(); // Prevenir comportamiento predeterminado
-    fetch("http://localhost:5001/logout", {
+    fetch(apiPath + "/logout", {
       method: "GET",
       credentials: "include", // Asegura que se envíen las cookies de sesión
     })

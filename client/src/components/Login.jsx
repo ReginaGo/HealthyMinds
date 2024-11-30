@@ -17,14 +17,8 @@ const Login = () => {
       // Realiza la solicitud POST con Axios
       const response = await api.post("/login", // Endpoint del backend
         { name, password }, // Datos a enviar
-        {
-          withCredentials: true, // Necesario para enviar cookies de sesión
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
       );
-
+      
       // Procesa la respuesta exitosa
       console.log("Login successful:", response.data);
       navigate("/"); // Redirige al home

@@ -79,7 +79,7 @@ function Blog() {
   
     try {
       // Enviar datos al backend con Axios
-      const response = await axios.post(
+      const response = await api.post(
         "/create-post",
         {
           username, // Asegúrate de que este valor esté definido

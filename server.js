@@ -1,6 +1,6 @@
+
 require("dotenv").config();
 const explicitWords = require('./bad-words.json');
-
 
 const cors = require('cors');
 const express = require("express");
@@ -23,14 +23,18 @@ app.set("view engine", "ejs");
 const allowedOrigins = [
   "http://localhost:3000", // Frontend en desarrollo
   "https://healthyminds-front.onrender.com", // Frontend en producción
+  "https://healthyminds-uj66.onrender.com",
 ];
 
 app.use(
   cors({
     origin: (origin, callback) => {
+      console.log(origin);
       if (!origin || allowedOrigins.includes(origin)) {
+        console.log("Allowed");
         callback(null, true);
       } else {
+        console.log("Not Allowed");
         callback(new Error("Not allowed by CORS"));
       }
     },
@@ -42,13 +46,13 @@ console.log(process.env.SESSION_SECRET)
 // Configuración de sesiones
 app.use(
   session({
-    secret: process.env.SESSION_SECRET || "your-secret-key",
+    secret: process.env.SESSION_SECRET || "default-secret-key", // Cambia esto en producción
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: process.env.NODE_ENV === "production", // Solo se envían en HTTPS
-      httpOnly: true, // Protege las cookies contra acceso por JavaScript
-      sameSite: "none", // Necesario para solicitudes cruzadas
+      secure: false, // Solo HTTPS en producción
+      httpOnly: true, // Protege las cookies de JavaScript
+      sameSite: "lax" , // "none" en producción, "lax" en desarrollo
     },
   })
 );
@@ -85,9 +89,7 @@ app.post("/register", async (req, res) => {
     const existingUser = await User.findOne({ name });
 
     if (existingUser) {
-      return res.status(400).render("register", {
-        errorMessage: "Error: User already exists",
-      });
+      return res.status(400);
     }
 
     const newUser = new User({ name, password });
@@ -170,6 +172,7 @@ app.post("/create-post", async (req, res) => {
 
 app.get("/", (req, res) => {
   const username = req.session.username;
+  console.log(username);
   if (!username) {
     return res.status(401).json({ message: "Unauthorized: Please log in." });
   }
@@ -232,8 +235,14 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build'),
+{
+  setHeaders: (res, path) => {
+    if (path.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css');
+    }
+  }
+}));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-

@@ -11,8 +11,16 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [openAnswer, setOpenAnswer] = useState(null);
 
+  let apiPath = "";
+
+  if (process.env.NODE_ENV === "production") {
+    apiPath = "https://backend-kv8d.onrender.com"; // URL del backend en producción
+  } else {
+    apiPath = "http://localhost:5001"; // URL del backend en desarrollo
+  }
+
   useEffect(() => {
-    fetch("http://localhost:5001/", {
+    fetch(apiPath, {
       method: "GET",
       credentials: "include",
     })

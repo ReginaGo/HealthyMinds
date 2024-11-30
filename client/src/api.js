@@ -3,7 +3,7 @@ import axios from "axios";
 let apiPath = "";
 
 if (process.env.NODE_ENV === "production") {
-  apiPath = "https://healthyminds-1.onrender.com"; // URL del backend en producción
+  apiPath = "https://backend-kv8d.onrender.com"; // URL del backend en producción
 } else {
   apiPath = "http://localhost:5001"; // URL del backend en desarrollo
 }

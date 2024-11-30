@@ -8,11 +8,19 @@ const Register = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
+  let apiPath = "";
+
+if (process.env.NODE_ENV === "production") {
+  apiPath = "https://backend-kv8d.onrender.com"; // URL del backend en producción
+} else {
+  apiPath = "http://localhost:5001"; // URL del backend en desarrollo
+}
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/register", {
+      const response = await fetch(apiPath + "/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
