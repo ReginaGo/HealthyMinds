@@ -28,17 +28,9 @@ const allowedOrigins = [
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      console.log(origin);
-      if (!origin || allowedOrigins.includes(origin)) {
-        console.log("Allowed");
-        callback(null, true);
-      } else {
-        console.log("Not Allowed");
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true, // Permitir cookies y sesiones
+    origin: "https://bien.onrender.com/", // Reemplaza con la URL de tu frontend
+    methods: ["POST", "GET"],
+    credentials: true,
   })
 );
 
