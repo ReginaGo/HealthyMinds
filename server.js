@@ -20,19 +20,26 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "ejs");
 
 // Middleware de sesión
-const allowedOrigins = [
-  "http://localhost:3000", // Frontend en desarrollo
-  "https://healthyminds-front.onrender.com", // Frontend en producción
-  "https://healthyminds-uj66.onrender.com",
-];
 
-app.use(
-  cors({
-    origin: "https://bien.onrender.com/", // Reemplaza con la URL de tu frontend
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+
+// app.use(
+//   cors({
+//     origin: "https://bien.onrender.com", // Reemplaza con la URL de tu frontend
+//     methods: ["POST", "GET"],
+//     credentials: true,
+//   })
+// );
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://bien.onrender.com");
+  res.header("Access-Control-Allow-Methods", "POST, GET");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
 
 console.log(process.env.SESSION_SECRET)
 // Configuración de sesiones

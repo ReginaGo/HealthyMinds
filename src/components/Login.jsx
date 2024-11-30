@@ -15,8 +15,9 @@ const Login = () => {
 
     try {
       // Realiza la solicitud POST con Axios
-      const response = await post("https://backend-kv8d.onrender.com/login", // Endpoint del backend
-        { name, password }, // Datos a enviar
+      const response = await axios.post("https://backend-kv8d.onrender.com/login", // Endpoint del backend
+        { name, password },
+        { withCredentials: true } // Datos a enviar
       );
       
       // Procesa la respuesta exitosa
