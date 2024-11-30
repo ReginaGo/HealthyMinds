@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios"; // Importa axios
 import Navbar from "./Navbar";
-import styles from "../Css/styles.css"
-
-
-
+import styles from "../Css/styles.css";
 
 const Home = () => {
   const [username, setUsername] = useState("");
@@ -20,29 +18,23 @@ const Home = () => {
   }
 
   useEffect(() => {
-    fetch(apiPath, {
-      method: "GET",
-      credentials: "include",
-    })
+    // Usamos axios para realizar la solicitud GET
+    axios
+      .get(apiPath, { withCredentials: true }) // Añade `withCredentials` si necesitas cookies
       .then((response) => {
-        if (!response.ok) {
-          if (response.status === 401) {
-            window.location.href = "/login";
-          }
-          throw new Error("Error fetching session");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setUsername(data.username || "Guest");
+        setUsername(response.data.username || "Guest");
         setIsLoading(false);
       })
       .catch((error) => {
         console.error("Session verification error:", error);
-        setError("Failed to load user data.");
+        if (error.response && error.response.status === 401) {
+          window.location.href = "/login";
+        } else {
+          setError("Failed to load user data.");
+        }
         setIsLoading(false);
       });
-  }, []);
+  }, [apiPath]);
 
   const toggleAnswer = (index) => {
     setOpenAnswer(openAnswer === index ? null : index);
@@ -65,6 +57,7 @@ const Home = () => {
       </div>
     );
   }
+
 
   return (
     <div>
