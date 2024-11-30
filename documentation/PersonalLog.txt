@@ -1,0 +1,11 @@
+
+Personal Log (Self-Assessment and Peer Evaluation)
+
+Carlos (Me)  
+In this final stage, my main contribution was to support code documentation and security validations. I helped comment on the backend, ensuring the functions were clear and understandable. Additionally, I worked on small design adjustments and form validation. Although I did not lead the development, I actively participated in the final testing. Regina, as always, was the most dedicated, managing the integration of the frontend with the backend and ensuring everything worked smoothly. My role was suppor...
+
+Regina  
+During this final stage, I again took on most of the development. I focused on the complete integration of the MERN stack, ensuring that React worked perfectly with our Express and MongoDB backend. I also led the implementation of the third-party API, resolving compatibility issues and ensuring data was handled correctly. Furthermore, I worked on the final design to ensure the interface was professional and user-friendly. I am satisfied with the level of functionality and design we achieved, and I appre...
+
+Fátima  
+My contribution during this stage focused on supporting code documentation and conducting design testing. I worked on commenting on parts of the backend and validating that data input was secure and correct. Although I was less involved in the more complex implementations, I helped optimize some React components and adjusted the styles to align with the final design. Regina was undoubtedly the leader during this stage, but I believe my support in documentation and testing was essential to achieve the goa...

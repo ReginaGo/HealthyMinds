@@ -1,0 +1,5 @@
+
+Final Reflection  
+This project was a significant challenge that allowed us to consolidate all the knowledge acquired during the course. Integrating the MERN stack presented important challenges, such as managing communication between React and Express, securing protected routes, and working with persistent data in MongoDB. We also learned to handle external APIs and design a RESTful API from scratch.  
+One of the biggest lessons was the importance of teamwork and the efficient distribution of tasks. Regina was the cornerstone of the project, handling most of the technical work, while Carlos and Fátima focused on complementary tasks such as documentation and testing. Although this worked on this occasion, it would be ideal to achieve a more equitable distribution of work in the future.  
+Ultimately, the result was a professional site with impeccable design and complete functionality. This project demonstrated the importance of attention to detail, planning, and constant iteration to achieve a final product that meets high-quality standards.

@@ -1,0 +1,23 @@
+
+Development Team Log (Team)
+Period: October 30 - November 27
+
+October 30 - November 5  
+Activity: Configuration of the MERN stack and initial integration of React with the backend. Creation of a RESTful API to handle users and sessions.  
+Challenges: Issues with setting up security for protected routes and managing session tokens.  
+Solution: Implemented JSON Web Tokens (JWT) and Express middlewares to manage authentication and authorization.  
+
+November 6 - November 12  
+Activity: Frontend design implementation using React. Creation of reusable components and configurations for the main views.  
+Challenges: Managing state in React to synchronize data between components and sessions.  
+Solution: Used Context API to manage global state, ensuring session consistency.  
+
+November 13 - November 19  
+Activity: Functionality testing, integration of a third-party API, and design adjustments to improve user experience. Additional backend validations for data input were implemented.  
+Challenges: CORS errors when consuming the external API and minor issues handling data in MongoDB.  
+Solution: Configured CORS policies on the server and adjusted MongoDB schemas to support new data.  
+
+November 20 - November 27  
+Activity: Completion of key functionalities: account creation, editing, and deletion, as well as information handling. Final security tests and deployment. Complete documentation of the code and system design was added.  
+Challenges: Optimizing site load times and correcting final bugs reported in beta testing.  
+Solution: Minified static files, optimized database queries, and performed exhaustive testing.
